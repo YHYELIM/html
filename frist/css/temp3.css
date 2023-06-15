@@ -1,0 +1,11 @@
+/* css 적용 방법 */
+/* 선택자를 지정하고 중괄호를 적는다 */
+/* 중괄호 내부에 속성을 적어준다 */
+/* 속성명 : 속성값 ; */
+h1 {
+  background-color: white;
+  color: navy;
+  text-align: center;
+  /* height: 300px; */
+}
+

@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  height: 880px;
+  background-image: url("./images/background.jpg");
+}
+
+.center-cover-img {
+  /* 화면 줄여도 중앙정렬 */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px; /*로고가 너무 붙어있어서 띄움 (부모한테 적용) 패딩이나 마진이나 보고 괜찮은걸로*/
+}
+
+.logo {
+  color: white;
+  font-size: 35px;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+  /* 로고와 중앙 맞춤 */
+}
+.nav-menu ul {
+  /* 내브메뉴 안에 있는 ul */
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.nav-menu ul li {
+  /* 내브메뉴 안에 있는 ul 안에 있는 li */
+  color: white;
+  font-weight: bold;
+}
+
+.search-box {
+  width: 430px;
+  background-color: white;
+  padding: 20px 30px;
+  margin-top: 20px;
+  margin-left: 50px;
+  border-radius: 6px;
+  box-shadow: 0 2px 2px 0 rgb(214, 214, 214);
+  /* 박스섀도우는 쌤이 준 프로그램에서 조정해보면 됨  */
+}
+.search-explain {
+  font-size: 30px;
+  font-weight: 900;
+  color: rgb(75, 75, 75);
+}
+table {
+  width: 100%;
+}
+.search-label {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 10px 0;
+  /* 목적지 체크인 체크아웃 인원 사이를 띄워줌  */
+}
+.search-input {
+  padding: 10px;
+  width: 100%;
+  font-size: 15px;
+  color: rgb(214, 214, 214);
+  border-width: 1px;
+  border-style: solid;
+  /* boder:1px solid rgb(214,214,214) 이렇게 한 줄로 써도됨 */
+}
+.search-button {
+  display: flex;
+  justify-content: flex-end;
+  /* 검색 버튼 끝 쪽으로 보냄 */
+}
+.search-button button {
+  /* search-button의 자손 button */
+  background-color: #ff5a5f;
+  border-width: 0;
+  border-radius: 6px;
+  width: 70px;
+  height: 45px;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  /* 마우스 갖다대면 손가락 모양으로 바뀜 */
+  margin-top: 20px;
+}
+
+main {
+  margin: 30px 80px;
+}
+section {
+  margin: 30px, 0;
+}
+.section-title {
+  font-size: 25px;
+  color: rgb(75, 75, 75);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.category-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  /* 한 줄에 3개 들어가있으니까  */
+}
+.category-card {
+  /* 그림:글자가 1:3정도 되어보임 */
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(214, 214, 214);
+  border-radius: 6px;
+  box-shadow: 0 0 3px 0 rgb(214, 214, 214);
+}
+
+.category-img {
+  height: 70px;
+}
+.category-name {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+.wide-area-img-1 {
+  margin-top: 40px;
+  height: 350px;
+  background-image: url("./images/wide1.jpg");
+  border-radius: 20px;
+}
+.suggest-img {
+  height: 250px;
+}
+.suggest-box {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  /* 자동 배치 모르겠고 니가 알아서 배치해줘*/
+  gap: 10px;
+}

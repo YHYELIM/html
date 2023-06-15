@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .content1 {
+        background-color: blue;
+        height: 100px;
+        width: 100px;
+        /* 위아래로 배치됨 */
+      }
+      .content2 {
+        background-color: green;
+        height: 100px;
+        width: 100px;
+      }
+      /* 블록 태그는 한줄을 다 차지하고 넓이 높이 세팅 가능 */
+      /* 스판은 내용만 감싸고 넓이 높이 세팅 불가능 */
+
+      .content3 {
+        display: inline-block;
+        /* 이걸 써야 넓이 높이 세팅 가능 */
+        /* 좌우로 배치됨 */
+        background-color: red;
+        height: 100px;
+        width: 100px;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="content1">내용1</div>
+    <div class="content1">내용1</div>
+    <span class="content2">내용2</span>
+    <span class="content3">내용3</span>
+    <span class="content3">내용3</span>
+  </body>
+</html>

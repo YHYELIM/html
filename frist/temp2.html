@@ -1,0 +1,34 @@
+
+<style>
+    /* css 적용 방법 */
+    /* 선택자를 지정하고 중괄호를 적는다 */
+    /* 중괄호 내부에 속성을 적어준다 */
+    /* 속성명 : 속성값 ; */
+    h1{
+        background-color: white;
+        color: navy;
+        text-align: center;
+        /* height: 300px; */
+    }
+</style>
+
+<h1>안녕하세요</h1>
+<script>
+    // 문서에서 h1태그를 하나 가져온다
+    const h1 = document.querySelector("h1");
+    //가져온 태그에 이벤트 리스너를 추가한다
+    //이벤트는 유저의 입력(키보드, 마우스)
+    //이벤트 리스너의 첫번째 칸에는 입력대기할 이벤트를 적는다
+    //쉼표
+    //이벤트 리스너의 두번째 칸에는 이벤트가 발생하면
+    //작동할 기능을 적는다 
+    h1.addEventListener("click",()=>{
+        alert("클릭하셨습니다");
+
+
+
+        
+    });
+    // 이벤트 발생을 듣고 있겠다
+</script>
+

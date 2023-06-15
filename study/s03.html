@@ -1,0 +1,60 @@
+<!-- 자동으로 만들어지는 코드를 스니펫이라고 한다 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- <style>공통코드 공통으로 스타일을 먹이고 싶으면 <style>이 필요 -->
+    <!-- 그래야지 코드가 짧아짐 -->
+    <style>
+      .my-div {
+        background-color: green;
+        /* display: inline; */
+      }
+      .my-span {
+        background-color: violet;
+        /* display: block; */
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 블록과 인라인 -->
+    <!-- div태그는 display:block;속성이다 -->
+    <!-- block속성은 태그를 한 줄 다 차지하게 한다 -->
+    <!-- span태그는 display:inline;속성이다 -->
+    <!-- inline속성은 한 줄에 여러 태그를 사용가능하다 -->
+
+    <div class="my-div">블록 속성</div>
+    <div>
+    <!-- div안에서 글씨를 바꾸고 싶으면 여기다가 style바꿈 -->
+      <span class="my-span" style="display:inline">인라인1</span></br>
+      <span class="my-span" style=" display:inline">인라인2</span></br>
+    </div>
+
+    <!-- 부모 자식 형제 -->
+    <!-- parent 클래스가 있는 div는 2개의 자식이 있다 -->
+    <!-- 자식1과 자식2 div는 형제다 -->
+    <!-- 자식1과 자식2의 부모는 parent클래스가 있는 div다 -->
+    <div class="parent">
+      <div>자식1</div>
+      <div>자식2</div>
+      <div class="child3">
+        <div>손자1</div>
+      </div>
+    </div>
+    <!-- 줄바꿈, 들여쓰기 -->
+    <!-- prettier로 반자동 정렬 기능 -->
+    <!-- ctrl alt L -->
+    <div>
+      <div>
+        1 <div>2
+
+        </div>
+       </div> 
+    </div>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 게시판 형태의 화면을 만들때 많이 사용한다 -->
+    <!-- table태그 속성중 border를 사용하면 2줄 칸이 만들어진다 -->
+    <table border>
+      <!-- tr은 테이블의 row를 뜻한다 -->
+      <tr>
+        <!-- th는 테이블 column의 제목 -->
+        <th>번호</th>
+        <th>상품</th>
+      </tr>
+      <tr>
+        <!-- td는 테이블 column의 내용 -->
+        <td>1</td>
+        <td>바나나</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>사과</td>
+      </tr>
+    </table>
+
+    <table border>
+      <!-- tr은 테이블의 row를 뜻한다 -->
+      <tr>
+        <!-- th는 테이블 column의 제목 -->
+        <th>번호</th>
+        <th>상품</th>
+      </tr>
+      <tr>
+        <!-- td는 테이블 column의 내용 -->
+        <td rowspan="2">1</td>
+        <td>바나나</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>사과</td>
+      </tr>
+    </table>
+
+    <table border>
+      <!-- tr은 테이블의 row를 뜻한다 -->
+      <tr>
+        <!-- th는 테이블 column의 제목 -->
+        <th>번호</th>
+        <th>상품</th>
+      </tr>
+      <tr>
+        <!-- td는 테이블 column의 내용 -->
+        <td>1</td>
+        <td>바나나</td>
+      </tr>
+      <tr>
+        <td colspan="2">2</td>
+        <td>사과</td>
+      </tr>
+    </table>
+  </body>
+</html>

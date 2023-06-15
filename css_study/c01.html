@@ -1,0 +1,86 @@
+<!-- c01.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .red {
+        color: red;
+      }
+      a[target] {
+        color: red;
+      }
+      div[class="my"] {
+        color: red;
+      }
+      /* div[class*="my"] { */
+      /* color: red; */
+      /* }my포함된거 빨간색됨 */
+
+      #title > .red {
+        color: green;
+      }
+      #title .blue {
+        color: blue;
+      }
+      p::before {
+        content: "나는";
+      }
+      p::after {
+        content: "입니다.";
+      }
+      .hover-click:hover {
+        background-color: brown;
+      }
+      .hover-click:active {
+        background-color: gray;
+      }
+      input:focus {
+        color: red;
+      }
+      input:checked {
+        color: red;
+      }
+      input:disabled {
+        color: red;
+      }
+      input:disabled {
+        color: red;
+      }
+      test {
+        color: rgb(167, 43, 43);
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>태그 속성 선택자</h1>
+
+    <a href="#">이동</a>
+    <a href="#" target="_blank">새 창으로 이동</a>
+    <hr />
+    <h1>문자열 속성 선택자</h1>
+    <div class="my">my</div>
+    <div class="my-div">my-div</div>
+    <hr />
+    <h1>자식 선택자</h1>
+    <div id="title">
+      <div class="red">자식1</div>
+      <div class="blue">자식2</div>
+      <div>자식3</div>
+      <div>
+        자식4
+        <div class="blue">손자</div>
+      </div>
+    </div>
+    <div class="red">외부</div>
+    <hr />
+    <h1>가상 요소 선택자</h1>
+    <p>홍길동</p>
+    <hr />
+    <div class="hover-click">마우스를 올리거나 눌러주세요</div>
+    <div>테스트</div>
+  </body>
+</html>
