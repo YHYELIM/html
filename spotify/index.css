@@ -5,22 +5,136 @@
 }
 
 header {
-  height: 100px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
 
   background-color: black;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 80px;
+  padding-top: 10px;
+
+  padding-right: 100px;
+  height: 80px;
 }
+.spotify {
+  padding-left: 300px;
+}
+
 nav {
-  width: 400px;
-  display: flex;
-  justify-content: space-evenly;
-  height: 100px;
-  border: 1px solid black;
   background-color: black;
+  padding-right: 200px;
+  padding-top: 20px;
 }
 .nav-menu {
-  font-size: 30px;
+  /* display: flex;
+  justify-content: end;
+  align-items: center; */
+
+  font-size: 16px;
   color: white;
+  padding-bottom: 10px;
+}
+.nav-menu ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  font-weight: 500;
+  font-size: 16px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+
+  /* align-content: space-between; */
+
+  padding-top: 50px;
+
+  height: 490px;
+  background-color: #ffcdd2;
+}
+.write {
+  text-align: start;
+  gap: 100px;
+}
+.won {
+  font-size: 35px;
+  font-weight: 1000;
+}
+.hae {
+  font-size: 35px;
+  font-weight: 1000;
+  padding-top: 30px;
+}
+.mae {
+  padding-top: 30px;
+  font-size: 20px;
+  font-weight: 600px;
+}
+
+.button {
+  margin-top: 30px;
+  font-size: inherit;
+}
+.one {
+  color: white;
+  font-weight: bold;
+  background-color: black;
+  border: none;
+  border-radius: 50px;
+  padding-block: 14px;
+  padding-inline: 32px;
+  cursor: pointer;
+}
+.two {
+  color: black;
+  font-weight: 500px;
+  background-color: #ffcdd2;
+  border-style: solid;
+  border-radius: 50px;
+  border-width: thin;
+  padding-block: 14px;
+  padding-inline: 32px;
+  cursor: pointer;
+}
+
+.charge {
+  gap: 10px;
+  font-size: 10px;
+  padding-top: 30px;
+}
+
+.photo {
+  padding-top: 50px;
+  padding-left: 30px;
+}
+.sec-container {
+  background-color: #f8f8f8;
+  text-align: center;
+
+  height: 400px;
+}
+.app {
+  font-size: 35px;
+  font-weight: bold;
+  padding-top: 70px;
+}
+.mobile {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  font-size: 24px;
+}
+
+.term {
+  padding-top: 30px;
+  font-size: 10px;
+  text-align: center;
+}
+
+.g {
+  cursor: pointer;
+  border: none;
+}
+.a {
+  cursor: pointer;
+  border: none;
 }
